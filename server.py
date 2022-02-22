@@ -19,7 +19,7 @@ LOWER_BOUND = 450
 UPPER_BOUND = 550
 n_storage = 128
 AVERAGE_SIGNAL = 512
-#ox 딥모델 파라미터
+#ox deep model parameters
 
 BAND_NUM = 12
 SENSOR_NUM = 6
@@ -36,30 +36,30 @@ cp = 0 # cp: checkpoint
 ep = cp * 2 + cp  # ep: endpoint
 
 
-params = [["./train_log/ox_model_c5.hdf5", 5],  #O/X 모델 파라미터
-          #["./train_log/direction_model_c5.hdf5" , 5] ,  #좌/우/위/아래 모델 파라미터
-          # ["./train_log/run_model_c2.hdf5" , 2],  #달리기 모델 파라미터
-          # ["./train_log/jump_model_c2.hdf5" , 2],  #점프 모델 파라미터
-          # ["./train_log/rowing_model_c2.hdf5" , 2],  #노젓기 모델 파라미터
-          # ["./train_log/tug-of-war_model_c2.hdf5" , 2],  #줄다리기 모델 파라미터
-          # ["./train_log/video_action_1_c2.hdf5" , 2],  #동영상 컨텐츠 책갈피 1
-          # ["./train_log/video_action_2_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 2
-          # ["./train_log/video_action_3_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 3
-          # ["./train_log/video_action_4_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 4
-          # ["./train_log/video_action_5_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 5
-          # ["./train_log/video_action_6_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 6
-          # ["./train_log/video_action_7_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 7
-          # ["./train_log/video_action_8_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 8
-          # ["./train_log/video_action_9_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 9
-          # ["./train_log/video_action_10_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 10
-          # ["./train_log/video_action_11_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 11
-          # ["./train_log/video_action_12_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 12
-          # ["./train_log/video_action_13_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 13
-          # ["./train_log/video_action_14_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 14
-          # ["./train_log/video_action_15_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 15
-          # ["./train_log/video_action_16_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 16
-          # ["./train_log/video_action_17_c2.hdf5", 2],  # 동영상 컨텐츠 책갈피 17
-          # ["./train_log/video_action_18_c2.hdf5", 2]  # 동영상 컨텐츠 책갈피 18
+params = [["./train_log/ox_model_c5.hdf5", 5],  #O/X model parameters
+          #["./train_log/direction_model_c5.hdf5" , 5] ,  #Left/Right/Up/Down model parameters
+          # ["./train_log/run_model_c2.hdf5" , 2],  #running model parameters
+          # ["./train_log/jump_model_c2.hdf5" , 2],  #jump model parameters
+          # ["./train_log/rowing_model_c2.hdf5" , 2],  #row model parameters
+          # ["./train_log/tug-of-war_model_c2.hdf5" , 2],  #tug-of-war model parameters
+          # ["./train_log/video_action_1_c2.hdf5" , 2],  # Video content bookmarks 1
+          # ["./train_log/video_action_2_c2.hdf5", 2],  # Video content bookmarks 2
+          # ["./train_log/video_action_3_c2.hdf5", 2],  # Video content bookmarks 3
+          # ["./train_log/video_action_4_c2.hdf5", 2],  # Video content bookmarks 4
+          # ["./train_log/video_action_5_c2.hdf5", 2],  # Video content bookmarks 5
+          # ["./train_log/video_action_6_c2.hdf5", 2],  # Video content bookmarks 6
+          # ["./train_log/video_action_7_c2.hdf5", 2],  # Video content bookmarks 7
+          # ["./train_log/video_action_8_c2.hdf5", 2],  # Video content bookmarks 8
+          # ["./train_log/video_action_9_c2.hdf5", 2],  # Video content bookmarks 9
+          # ["./train_log/video_action_10_c2.hdf5", 2],  # Video content bookmarks 10
+          # ["./train_log/video_action_11_c2.hdf5", 2],  # Video content bookmarks 11
+          # ["./train_log/video_action_12_c2.hdf5", 2],  # Video content bookmarks 12
+          # ["./train_log/video_action_13_c2.hdf5", 2],  # Video content bookmarks 13
+          # ["./train_log/video_action_14_c2.hdf5", 2],  # Video content bookmarks 14
+          # ["./train_log/video_action_15_c2.hdf5", 2],  # Video content bookmarks 15
+          # ["./train_log/video_action_16_c2.hdf5", 2],  # Video content bookmarks 16
+          # ["./train_log/video_action_17_c2.hdf5", 2],  # Video content bookmarks 17
+          # ["./train_log/video_action_18_c2.hdf5", 2]  # Video content bookmarks 18
           ]
 
 class model_param:
@@ -91,10 +91,10 @@ class  model_server:
         # self.data = []
         self.init_data()
 
-        self.serverSocket = socket.socket(AF_INET, SOCK_STREAM)  # 1.소켓을 생성한다.
-        self.serverSocket.bind(ADDR)  # 2.소켓 주소 정보 할당
+        self.serverSocket = socket.socket(AF_INET, SOCK_STREAM)  # 1.create a socket.
+        self.serverSocket.bind(ADDR)  # 2.Allocate socket address information
         print('bind')
-        #listen 시작
+        #listen start
         _thread.start_new_thread(self.come, (), )
 
         while True:
@@ -117,7 +117,7 @@ class  model_server:
     def come(self):
         while True:
             try:
-                self.serverSocket.listen(1)  # 3.연결 수신 대기 상태
+                self.serverSocket.listen(1)  # 3.connection listening state
                 print('listen...')
                 self.conn, self.addr = self.serverSocket.accept()  # (socket object, address info) return
                 print('Got connection from', self.addr)
@@ -145,7 +145,7 @@ class  model_server:
                 msg = data.decode('utf-8')
                 msg = msg.split(",")
                 msg = np.array(msg,dtype=np.int)
-                #1) np array 로 변환해서 stack 쌓기
+                #1) np array convert to stack build up
 
                 self.data = self.data[:, 1:]
                 self.data = np.hstack((self.data, np.atleast_2d(msg).T))
@@ -159,7 +159,7 @@ class  model_server:
     def predict(self):
         self.response_band = []
         band_max = []
-        #밴드 시그널 비교
+        #Band Signal Comparison
         sensor_data = []
         for i in range(BAND_NUM):
             check_pt = self.data[i*SENSOR_NUM+GRY_X,cp]

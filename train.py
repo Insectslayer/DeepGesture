@@ -16,7 +16,7 @@ from data import *
 import datetime
 from models import *
 import random
-import signal_processing as sp
+# import signal_processing as sp
 import csv
 parser = argparse.ArgumentParser(description='Tensorflow  backend Gesture Classification Training on several datasets')
 parser.add_argument('--data', default = "./train", type= str,
